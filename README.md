@@ -1,71 +1,3677 @@
-# testwv2 README
+# REPRO Issues
 
-This is the README for your extension "testwv2". After writing up a brief description, we recommend including the following sections.
+## Default from yo code (typescript) and adding the web ui toolkit and initialization code
 
-## Features
+Output errors
+```bash
+[{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 59,
+	"startColumn": 28,
+	"endLineNumber": 59,
+	"endColumn": 28
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2552",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'. Did you mean 'HTMLLIElement'?",
+	"source": "ts",
+	"startLineNumber": 153,
+	"startColumn": 22,
+	"endLineNumber": 153,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2552",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'. Did you mean 'HTMLLIElement'?",
+	"source": "ts",
+	"startLineNumber": 158,
+	"startColumn": 22,
+	"endLineNumber": 158,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2552",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'. Did you mean 'HTMLLIElement'?",
+	"source": "ts",
+	"startLineNumber": 160,
+	"startColumn": 41,
+	"endLineNumber": 160,
+	"endColumn": 41
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 261,
+	"startColumn": 24,
+	"endLineNumber": 261,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MutationObserverInit'.",
+	"source": "ts",
+	"startLineNumber": 315,
+	"startColumn": 97,
+	"endLineNumber": 315,
+	"endColumn": 97
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 337,
+	"startColumn": 25,
+	"endLineNumber": 337,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ChildNode'.",
+	"source": "ts",
+	"startLineNumber": 349,
+	"startColumn": 27,
+	"endLineNumber": 349,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'DocumentFragment'.",
+	"source": "ts",
+	"startLineNumber": 366,
+	"startColumn": 15,
+	"endLineNumber": 366,
+	"endColumn": 15
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLTemplateElement'.",
+	"source": "ts",
+	"startLineNumber": 395,
+	"startColumn": 51,
+	"endLineNumber": 395,
+	"endColumn": 51
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'CSSStyleSheet'.",
+	"source": "ts",
+	"startLineNumber": 401,
+	"startColumn": 65,
+	"endLineNumber": 401,
+	"endColumn": 65
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 435,
+	"startColumn": 23,
+	"endLineNumber": 435,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 474,
+	"startColumn": 26,
+	"endLineNumber": 474,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLStyleElement'.",
+	"source": "ts",
+	"startLineNumber": 479,
+	"startColumn": 39,
+	"endLineNumber": 479,
+	"endColumn": 39
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLStyleElement'.",
+	"source": "ts",
+	"startLineNumber": 484,
+	"startColumn": 42,
+	"endLineNumber": 484,
+	"endColumn": 42
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'CustomEventInit'.",
+	"source": "ts",
+	"startLineNumber": 519,
+	"startColumn": 53,
+	"endLineNumber": 519,
+	"endColumn": 53
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 530,
+	"startColumn": 38,
+	"endLineNumber": 530,
+	"endColumn": 38
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 625,
+	"startColumn": 20,
+	"endLineNumber": 625,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Comment'.",
+	"source": "ts",
+	"startLineNumber": 625,
+	"startColumn": 35,
+	"endLineNumber": 625,
+	"endColumn": 35
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Comment'.",
+	"source": "ts",
+	"startLineNumber": 630,
+	"startColumn": 43,
+	"endLineNumber": 630,
+	"endColumn": 43
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 681,
+	"startColumn": 27,
+	"endLineNumber": 681,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 690,
+	"startColumn": 34,
+	"endLineNumber": 690,
+	"endColumn": 34
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 695,
+	"startColumn": 30,
+	"endLineNumber": 695,
+	"endColumn": 30
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'DocumentFragment'.",
+	"source": "ts",
+	"startLineNumber": 700,
+	"startColumn": 36,
+	"endLineNumber": 700,
+	"endColumn": 36
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'TreeWalker'.",
+	"source": "ts",
+	"startLineNumber": 700,
+	"startColumn": 55,
+	"endLineNumber": 700,
+	"endColumn": 55
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 715,
+	"startColumn": 46,
+	"endLineNumber": 715,
+	"endColumn": 46
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 715,
+	"startColumn": 74,
+	"endLineNumber": 715,
+	"endColumn": 74
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 759,
+	"startColumn": 20,
+	"endLineNumber": 759,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 771,
+	"startColumn": 31,
+	"endLineNumber": 771,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 779,
+	"startColumn": 31,
+	"endLineNumber": 779,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 779,
+	"startColumn": 57,
+	"endLineNumber": 779,
+	"endColumn": 57
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 825,
+	"startColumn": 18,
+	"endLineNumber": 825,
+	"endColumn": 18
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 856,
+	"startColumn": 28,
+	"endLineNumber": 856,
+	"endColumn": 28
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'CustomEventInit'.",
+	"source": "ts",
+	"startLineNumber": 883,
+	"startColumn": 54,
+	"endLineNumber": 883,
+	"endColumn": 54
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 915,
+	"startColumn": 46,
+	"endLineNumber": 915,
+	"endColumn": 46
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 922,
+	"startColumn": 17,
+	"endLineNumber": 922,
+	"endColumn": 17
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 923,
+	"startColumn": 20,
+	"endLineNumber": 923,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ShadowRootInit'.",
+	"source": "ts",
+	"startLineNumber": 975,
+	"startColumn": 30,
+	"endLineNumber": 975,
+	"endColumn": 30
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ElementDefinitionOptions'.",
+	"source": "ts",
+	"startLineNumber": 979,
+	"startColumn": 31,
+	"endLineNumber": 979,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'CustomElementRegistry'.",
+	"source": "ts",
+	"startLineNumber": 991,
+	"startColumn": 23,
+	"endLineNumber": 991,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1077,
+	"startColumn": 28,
+	"endLineNumber": 1077,
+	"endColumn": 28
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1098,
+	"startColumn": 37,
+	"endLineNumber": 1098,
+	"endColumn": 37
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1119,
+	"startColumn": 17,
+	"endLineNumber": 1119,
+	"endColumn": 17
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1123,
+	"startColumn": 16,
+	"endLineNumber": 1123,
+	"endColumn": 16
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'DocumentFragment'.",
+	"source": "ts",
+	"startLineNumber": 1129,
+	"startColumn": 27,
+	"endLineNumber": 1129,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1134,
+	"startColumn": 20,
+	"endLineNumber": 1134,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1139,
+	"startColumn": 24,
+	"endLineNumber": 1139,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1200,
+	"startColumn": 28,
+	"endLineNumber": 1200,
+	"endColumn": 28
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 1227,
+	"startColumn": 23,
+	"endLineNumber": 1227,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 1236,
+	"startColumn": 25,
+	"endLineNumber": 1236,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1248,
+	"startColumn": 36,
+	"endLineNumber": 1248,
+	"endColumn": 36
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ShadowRootInit'.",
+	"source": "ts",
+	"startLineNumber": 1422,
+	"startColumn": 38,
+	"endLineNumber": 1422,
+	"endColumn": 38
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ElementDefinitionOptions'.",
+	"source": "ts",
+	"startLineNumber": 1426,
+	"startColumn": 31,
+	"endLineNumber": 1426,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 1484,
+	"startColumn": 25,
+	"endLineNumber": 1484,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1536,
+	"startColumn": 27,
+	"endLineNumber": 1536,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1582,
+	"startColumn": 28,
+	"endLineNumber": 1582,
+	"endColumn": 28
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSlotElement'.",
+	"source": "ts",
+	"startLineNumber": 1618,
+	"startColumn": 25,
+	"endLineNumber": 1618,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1630,
+	"startColumn": 27,
+	"endLineNumber": 1630,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'AssignedNodesOptions'.",
+	"source": "ts",
+	"startLineNumber": 1637,
+	"startColumn": 90,
+	"endLineNumber": 1637,
+	"endColumn": 90
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'CSSStyleSheet'.",
+	"source": "ts",
+	"startLineNumber": 1667,
+	"startColumn": 26,
+	"endLineNumber": 1667,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLStyleElement'.",
+	"source": "ts",
+	"startLineNumber": 1672,
+	"startColumn": 20,
+	"endLineNumber": 1672,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLStyleElement'.",
+	"source": "ts",
+	"startLineNumber": 1678,
+	"startColumn": 21,
+	"endLineNumber": 1678,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLStyleElement'.",
+	"source": "ts",
+	"startLineNumber": 1683,
+	"startColumn": 25,
+	"endLineNumber": 1683,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 1688,
+	"startColumn": 32,
+	"endLineNumber": 1688,
+	"endColumn": 32
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 1688,
+	"startColumn": 42,
+	"endLineNumber": 1688,
+	"endColumn": 42
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'NodeListOf'.",
+	"source": "ts",
+	"startLineNumber": 1688,
+	"startColumn": 71,
+	"endLineNumber": 1688,
+	"endColumn": 71
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MutationObserverInit'.",
+	"source": "ts",
+	"startLineNumber": 1755,
+	"startColumn": 111,
+	"endLineNumber": 1755,
+	"endColumn": 111
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1775,
+	"startColumn": 26,
+	"endLineNumber": 1775,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1779,
+	"startColumn": 25,
+	"endLineNumber": 1779,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1784,
+	"startColumn": 24,
+	"endLineNumber": 1784,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLTemplateElement'.",
+	"source": "ts",
+	"startLineNumber": 1921,
+	"startColumn": 29,
+	"endLineNumber": 1921,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLTemplateElement'.",
+	"source": "ts",
+	"startLineNumber": 1931,
+	"startColumn": 32,
+	"endLineNumber": 1931,
+	"endColumn": 32
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 1936,
+	"startColumn": 32,
+	"endLineNumber": 1936,
+	"endColumn": 32
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1944,
+	"startColumn": 35,
+	"endLineNumber": 1944,
+	"endColumn": 35
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-element/dist/fast-element.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 1944,
+	"startColumn": 70,
+	"endLineNumber": 1944,
+	"endColumn": 70
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 40,
+	"startColumn": 21,
+	"endLineNumber": 40,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 44,
+	"startColumn": 37,
+	"endLineNumber": 44,
+	"endColumn": 37
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 44,
+	"startColumn": 62,
+	"endLineNumber": 44,
+	"endColumn": 62
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 133,
+	"startColumn": 19,
+	"endLineNumber": 133,
+	"endColumn": 19
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 137,
+	"startColumn": 23,
+	"endLineNumber": 137,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 255,
+	"startColumn": 28,
+	"endLineNumber": 255,
+	"endColumn": 28
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLAnchorElement'.",
+	"source": "ts",
+	"startLineNumber": 259,
+	"startColumn": 14,
+	"endLineNumber": 259,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 450,
+	"startColumn": 20,
+	"endLineNumber": 450,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 457,
+	"startColumn": 22,
+	"endLineNumber": 457,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 1123,
+	"startColumn": 29,
+	"endLineNumber": 1123,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 1276,
+	"startColumn": 28,
+	"endLineNumber": 1276,
+	"endColumn": 28
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLButtonElement'.",
+	"source": "ts",
+	"startLineNumber": 1300,
+	"startColumn": 14,
+	"endLineNumber": 1300,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 1462,
+	"startColumn": 29,
+	"endLineNumber": 1462,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 1468,
+	"startColumn": 26,
+	"endLineNumber": 1468,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 1586,
+	"startColumn": 12,
+	"endLineNumber": 1586,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 1621,
+	"startColumn": 26,
+	"endLineNumber": 1621,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 1630,
+	"startColumn": 26,
+	"endLineNumber": 1630,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 1634,
+	"startColumn": 23,
+	"endLineNumber": 1634,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 1694,
+	"startColumn": 61,
+	"endLineNumber": 1694,
+	"endColumn": 61
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 1710,
+	"startColumn": 55,
+	"endLineNumber": 1710,
+	"endColumn": 55
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 1754,
+	"startColumn": 14,
+	"endLineNumber": 1754,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 1760,
+	"startColumn": 14,
+	"endLineNumber": 1760,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 1867,
+	"startColumn": 21,
+	"endLineNumber": 1867,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 1898,
+	"startColumn": 24,
+	"endLineNumber": 1898,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'InputEvent'.",
+	"source": "ts",
+	"startLineNumber": 1905,
+	"startColumn": 21,
+	"endLineNumber": 1905,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 1912,
+	"startColumn": 23,
+	"endLineNumber": 1912,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 1912,
+	"startColumn": 31,
+	"endLineNumber": 1912,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 1919,
+	"startColumn": 21,
+	"endLineNumber": 1919,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 1989,
+	"startColumn": 33,
+	"endLineNumber": 1989,
+	"endColumn": 33
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 1989,
+	"startColumn": 62,
+	"endLineNumber": 1989,
+	"endColumn": 62
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2084,
+	"startColumn": 38,
+	"endLineNumber": 2084,
+	"endColumn": 38
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2098,
+	"startColumn": 53,
+	"endLineNumber": 2098,
+	"endColumn": 53
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2098,
+	"startColumn": 72,
+	"endLineNumber": 2098,
+	"endColumn": 72
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2109,
+	"startColumn": 50,
+	"endLineNumber": 2109,
+	"endColumn": 50
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2109,
+	"startColumn": 76,
+	"endLineNumber": 2109,
+	"endColumn": 76
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2116,
+	"startColumn": 65,
+	"endLineNumber": 2116,
+	"endColumn": 65
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'BigInteger'.",
+	"source": "ts",
+	"startLineNumber": 2262,
+	"startColumn": 79,
+	"endLineNumber": 2262,
+	"endColumn": 79
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2396,
+	"startColumn": 18,
+	"endLineNumber": 2396,
+	"endColumn": 18
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 2418,
+	"startColumn": 23,
+	"endLineNumber": 2418,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 2422,
+	"startColumn": 20,
+	"endLineNumber": 2422,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 2426,
+	"startColumn": 23,
+	"endLineNumber": 2426,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 2430,
+	"startColumn": 22,
+	"endLineNumber": 2430,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 2491,
+	"startColumn": 22,
+	"endLineNumber": 2491,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 2492,
+	"startColumn": 23,
+	"endLineNumber": 2492,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 2493,
+	"startColumn": 22,
+	"endLineNumber": 2493,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2613,
+	"startColumn": 19,
+	"endLineNumber": 2613,
+	"endColumn": 19
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 2619,
+	"startColumn": 26,
+	"endLineNumber": 2619,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 2633,
+	"startColumn": 23,
+	"endLineNumber": 2633,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 2634,
+	"startColumn": 24,
+	"endLineNumber": 2634,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 2635,
+	"startColumn": 22,
+	"endLineNumber": 2635,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3113,
+	"startColumn": 88,
+	"endLineNumber": 3113,
+	"endColumn": 88
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ShadowRootMode'.",
+	"source": "ts",
+	"startLineNumber": 3139,
+	"startColumn": 30,
+	"endLineNumber": 3139,
+	"endColumn": 30
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3156,
+	"startColumn": 31,
+	"endLineNumber": 3156,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Document'.",
+	"source": "ts",
+	"startLineNumber": 3156,
+	"startColumn": 45,
+	"endLineNumber": 3156,
+	"endColumn": 45
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3177,
+	"startColumn": 29,
+	"endLineNumber": 3177,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 3185,
+	"startColumn": 24,
+	"endLineNumber": 3185,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'BigInteger'.",
+	"source": "ts",
+	"startLineNumber": 3220,
+	"startColumn": 76,
+	"endLineNumber": 3220,
+	"endColumn": 76
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3228,
+	"startColumn": 25,
+	"endLineNumber": 3228,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3234,
+	"startColumn": 26,
+	"endLineNumber": 3234,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3240,
+	"startColumn": 26,
+	"endLineNumber": 3240,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3245,
+	"startColumn": 29,
+	"endLineNumber": 3245,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3254,
+	"startColumn": 65,
+	"endLineNumber": 3254,
+	"endColumn": 65
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3258,
+	"startColumn": 67,
+	"endLineNumber": 3258,
+	"endColumn": 67
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3281,
+	"startColumn": 31,
+	"endLineNumber": 3281,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3295,
+	"startColumn": 34,
+	"endLineNumber": 3295,
+	"endColumn": 34
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3303,
+	"startColumn": 27,
+	"endLineNumber": 3303,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Document'.",
+	"source": "ts",
+	"startLineNumber": 3303,
+	"startColumn": 41,
+	"endLineNumber": 3303,
+	"endColumn": 41
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3308,
+	"startColumn": 29,
+	"endLineNumber": 3308,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Document'.",
+	"source": "ts",
+	"startLineNumber": 3308,
+	"startColumn": 43,
+	"endLineNumber": 3308,
+	"endColumn": 43
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3319,
+	"startColumn": 13,
+	"endLineNumber": 3319,
+	"endColumn": 13
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 3376,
+	"startColumn": 36,
+	"endLineNumber": 3376,
+	"endColumn": 36
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 3385,
+	"startColumn": 31,
+	"endLineNumber": 3385,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 3397,
+	"startColumn": 36,
+	"endLineNumber": 3397,
+	"endColumn": 36
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 3578,
+	"startColumn": 13,
+	"endLineNumber": 3578,
+	"endColumn": 13
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDetailsElement'.",
+	"source": "ts",
+	"startLineNumber": 3704,
+	"startColumn": 14,
+	"endLineNumber": 3704,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ShadowRootMode'.",
+	"source": "ts",
+	"startLineNumber": 3839,
+	"startColumn": 30,
+	"endLineNumber": 3839,
+	"endColumn": 30
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLFormElement'.",
+	"source": "ts",
+	"startLineNumber": 3920,
+	"startColumn": 20,
+	"endLineNumber": 3920,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'NodeList'.",
+	"source": "ts",
+	"startLineNumber": 3924,
+	"startColumn": 22,
+	"endLineNumber": 3924,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ValidityState'.",
+	"source": "ts",
+	"startLineNumber": 3932,
+	"startColumn": 24,
+	"endLineNumber": 3932,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'File'.",
+	"source": "ts",
+	"startLineNumber": 3953,
+	"startColumn": 25,
+	"endLineNumber": 3953,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FormData'.",
+	"source": "ts",
+	"startLineNumber": 3953,
+	"startColumn": 41,
+	"endLineNumber": 3953,
+	"endColumn": 41
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'File'.",
+	"source": "ts",
+	"startLineNumber": 3953,
+	"startColumn": 66,
+	"endLineNumber": 3953,
+	"endColumn": 66
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FormData'.",
+	"source": "ts",
+	"startLineNumber": 3953,
+	"startColumn": 82,
+	"endLineNumber": 3953,
+	"endColumn": 82
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 3961,
+	"startColumn": 71,
+	"endLineNumber": 3961,
+	"endColumn": 71
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 4070,
+	"startColumn": 21,
+	"endLineNumber": 4070,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 4070,
+	"startColumn": 29,
+	"endLineNumber": 4070,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 4186,
+	"startColumn": 36,
+	"endLineNumber": 4186,
+	"endColumn": 36
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 4199,
+	"startColumn": 24,
+	"endLineNumber": 4199,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4206,
+	"startColumn": 23,
+	"endLineNumber": 4206,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4216,
+	"startColumn": 12,
+	"endLineNumber": 4216,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4227,
+	"startColumn": 12,
+	"endLineNumber": 4227,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4238,
+	"startColumn": 12,
+	"endLineNumber": 4238,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4248,
+	"startColumn": 76,
+	"endLineNumber": 4248,
+	"endColumn": 76
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4256,
+	"startColumn": 12,
+	"endLineNumber": 4256,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4267,
+	"startColumn": 12,
+	"endLineNumber": 4267,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4294,
+	"startColumn": 12,
+	"endLineNumber": 4294,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4305,
+	"startColumn": 12,
+	"endLineNumber": 4305,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSelectElement'.",
+	"source": "ts",
+	"startLineNumber": 4316,
+	"startColumn": 12,
+	"endLineNumber": 4316,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4327,
+	"startColumn": 12,
+	"endLineNumber": 4327,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4338,
+	"startColumn": 12,
+	"endLineNumber": 4338,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLTextAreaElement'.",
+	"source": "ts",
+	"startLineNumber": 4349,
+	"startColumn": 12,
+	"endLineNumber": 4349,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 4360,
+	"startColumn": 12,
+	"endLineNumber": 4360,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ShadowRootInit'.",
+	"source": "ts",
+	"startLineNumber": 4443,
+	"startColumn": 66,
+	"endLineNumber": 4443,
+	"endColumn": 66
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'ElementDefinitionOptions'.",
+	"source": "ts",
+	"startLineNumber": 4447,
+	"startColumn": 59,
+	"endLineNumber": 4447,
+	"endColumn": 59
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4494,
+	"startColumn": 47,
+	"endLineNumber": 4494,
+	"endColumn": 47
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 4531,
+	"startColumn": 22,
+	"endLineNumber": 4531,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 4536,
+	"startColumn": 14,
+	"endLineNumber": 4536,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 4541,
+	"startColumn": 31,
+	"endLineNumber": 4541,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 4546,
+	"startColumn": 27,
+	"endLineNumber": 4546,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4629,
+	"startColumn": 18,
+	"endLineNumber": 4629,
+	"endColumn": 18
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4648,
+	"startColumn": 34,
+	"endLineNumber": 4648,
+	"endColumn": 34
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4648,
+	"startColumn": 55,
+	"endLineNumber": 4648,
+	"endColumn": 55
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4694,
+	"startColumn": 24,
+	"endLineNumber": 4694,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 4700,
+	"startColumn": 21,
+	"endLineNumber": 4700,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 4700,
+	"startColumn": 29,
+	"endLineNumber": 4700,
+	"endColumn": 29
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 4821,
+	"startColumn": 45,
+	"endLineNumber": 4821,
+	"endColumn": 45
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 4829,
+	"startColumn": 47,
+	"endLineNumber": 4829,
+	"endColumn": 47
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4829,
+	"startColumn": 63,
+	"endLineNumber": 4829,
+	"endColumn": 63
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 4960,
+	"startColumn": 37,
+	"endLineNumber": 4960,
+	"endColumn": 37
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 4966,
+	"startColumn": 21,
+	"endLineNumber": 4966,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 4996,
+	"startColumn": 21,
+	"endLineNumber": 4996,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 5011,
+	"startColumn": 23,
+	"endLineNumber": 5011,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 5052,
+	"startColumn": 23,
+	"endLineNumber": 5052,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 5059,
+	"startColumn": 25,
+	"endLineNumber": 5059,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 5131,
+	"startColumn": 33,
+	"endLineNumber": 5131,
+	"endColumn": 33
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 5131,
+	"startColumn": 62,
+	"endLineNumber": 5131,
+	"endColumn": 62
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 5286,
+	"startColumn": 21,
+	"endLineNumber": 5286,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 5301,
+	"startColumn": 23,
+	"endLineNumber": 5301,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 5307,
+	"startColumn": 24,
+	"endLineNumber": 5307,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 5314,
+	"startColumn": 23,
+	"endLineNumber": 5314,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 5322,
+	"startColumn": 25,
+	"endLineNumber": 5322,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLOptionElement'.",
+	"source": "ts",
+	"startLineNumber": 5390,
+	"startColumn": 12,
+	"endLineNumber": 5390,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 5413,
+	"startColumn": 14,
+	"endLineNumber": 5413,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 5421,
+	"startColumn": 48,
+	"endLineNumber": 5421,
+	"endColumn": 48
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 5421,
+	"startColumn": 62,
+	"endLineNumber": 5421,
+	"endColumn": 62
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLFormElement'.",
+	"source": "ts",
+	"startLineNumber": 5474,
+	"startColumn": 17,
+	"endLineNumber": 5474,
+	"endColumn": 17
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MediaQueryList'.",
+	"source": "ts",
+	"startLineNumber": 5516,
+	"startColumn": 21,
+	"endLineNumber": 5516,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MediaQueryList'.",
+	"source": "ts",
+	"startLineNumber": 5521,
+	"startColumn": 24,
+	"endLineNumber": 5521,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 5531,
+	"startColumn": 39,
+	"endLineNumber": 5531,
+	"endColumn": 39
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 5536,
+	"startColumn": 41,
+	"endLineNumber": 5536,
+	"endColumn": 41
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MediaQueryList'.",
+	"source": "ts",
+	"startLineNumber": 5556,
+	"startColumn": 21,
+	"endLineNumber": 5556,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MediaQueryList'.",
+	"source": "ts",
+	"startLineNumber": 5566,
+	"startColumn": 24,
+	"endLineNumber": 5566,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MediaQueryList'.",
+	"source": "ts",
+	"startLineNumber": 5596,
+	"startColumn": 24,
+	"endLineNumber": 5596,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 5608,
+	"startColumn": 41,
+	"endLineNumber": 5608,
+	"endColumn": 41
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MediaQueryList'.",
+	"source": "ts",
+	"startLineNumber": 5615,
+	"startColumn": 53,
+	"endLineNumber": 5615,
+	"endColumn": 53
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MediaQueryListEvent'.",
+	"source": "ts",
+	"startLineNumber": 5615,
+	"startColumn": 74,
+	"endLineNumber": 5615,
+	"endColumn": 74
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSlotElement'.",
+	"source": "ts",
+	"startLineNumber": 5629,
+	"startColumn": 12,
+	"endLineNumber": 5629,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 5666,
+	"startColumn": 26,
+	"endLineNumber": 5666,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 5671,
+	"startColumn": 25,
+	"endLineNumber": 5671,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 5783,
+	"startColumn": 14,
+	"endLineNumber": 5783,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 5797,
+	"startColumn": 32,
+	"endLineNumber": 5797,
+	"endColumn": 32
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 5801,
+	"startColumn": 30,
+	"endLineNumber": 5801,
+	"endColumn": 30
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 5809,
+	"startColumn": 26,
+	"endLineNumber": 5809,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 5813,
+	"startColumn": 25,
+	"endLineNumber": 5813,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 6067,
+	"startColumn": 26,
+	"endLineNumber": 6067,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 6072,
+	"startColumn": 14,
+	"endLineNumber": 6072,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 6144,
+	"startColumn": 22,
+	"endLineNumber": 6144,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 6476,
+	"startColumn": 30,
+	"endLineNumber": 6476,
+	"endColumn": 30
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 6482,
+	"startColumn": 19,
+	"endLineNumber": 6482,
+	"endColumn": 19
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 6544,
+	"startColumn": 22,
+	"endLineNumber": 6544,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 6548,
+	"startColumn": 22,
+	"endLineNumber": 6548,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 6552,
+	"startColumn": 23,
+	"endLineNumber": 6552,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 6560,
+	"startColumn": 27,
+	"endLineNumber": 6560,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 6572,
+	"startColumn": 25,
+	"endLineNumber": 6572,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 6576,
+	"startColumn": 27,
+	"endLineNumber": 6576,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 6655,
+	"startColumn": 22,
+	"endLineNumber": 6655,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 6656,
+	"startColumn": 20,
+	"endLineNumber": 6656,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 6685,
+	"startColumn": 19,
+	"endLineNumber": 6685,
+	"endColumn": 19
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 6693,
+	"startColumn": 21,
+	"endLineNumber": 6693,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 6701,
+	"startColumn": 21,
+	"endLineNumber": 6701,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 6715,
+	"startColumn": 21,
+	"endLineNumber": 6715,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 6750,
+	"startColumn": 20,
+	"endLineNumber": 6750,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 6831,
+	"startColumn": 41,
+	"endLineNumber": 6831,
+	"endColumn": 41
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSelectElement'.",
+	"source": "ts",
+	"startLineNumber": 6845,
+	"startColumn": 36,
+	"endLineNumber": 6845,
+	"endColumn": 36
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLTextAreaElement'.",
+	"source": "ts",
+	"startLineNumber": 6845,
+	"startColumn": 56,
+	"endLineNumber": 6845,
+	"endColumn": 56
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 6845,
+	"startColumn": 78,
+	"endLineNumber": 6845,
+	"endColumn": 78
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2420",
+	"severity": 8,
+	"message": "Class 'Radio' incorrectly implements interface 'RadioControl'.",
+	"source": "ts",
+	"startLineNumber": 6859,
+	"startColumn": 22,
+	"endLineNumber": 6859,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 6882,
+	"startColumn": 26,
+	"endLineNumber": 6882,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 6896,
+	"startColumn": 26,
+	"endLineNumber": 6896,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 6900,
+	"startColumn": 21,
+	"endLineNumber": 6900,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 6913,
+	"startColumn": 41,
+	"endLineNumber": 6913,
+	"endColumn": 41
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 6971,
+	"startColumn": 17,
+	"endLineNumber": 6971,
+	"endColumn": 17
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 6975,
+	"startColumn": 26,
+	"endLineNumber": 6975,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 6996,
+	"startColumn": 26,
+	"endLineNumber": 6996,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 7000,
+	"startColumn": 23,
+	"endLineNumber": 7000,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 7012,
+	"startColumn": 25,
+	"endLineNumber": 7012,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 7421,
+	"startColumn": 26,
+	"endLineNumber": 7421,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 7426,
+	"startColumn": 11,
+	"endLineNumber": 7426,
+	"endColumn": 11
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 7431,
+	"startColumn": 14,
+	"endLineNumber": 7431,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 7547,
+	"startColumn": 14,
+	"endLineNumber": 7547,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 7596,
+	"startColumn": 14,
+	"endLineNumber": 7596,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 7642,
+	"startColumn": 21,
+	"endLineNumber": 7642,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 7649,
+	"startColumn": 24,
+	"endLineNumber": 7649,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 7668,
+	"startColumn": 33,
+	"endLineNumber": 7668,
+	"endColumn": 33
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 7668,
+	"startColumn": 62,
+	"endLineNumber": 7668,
+	"endColumn": 62
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 7677,
+	"startColumn": 25,
+	"endLineNumber": 7677,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 7715,
+	"startColumn": 23,
+	"endLineNumber": 7715,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 7953,
+	"startColumn": 12,
+	"endLineNumber": 7953,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 7957,
+	"startColumn": 12,
+	"endLineNumber": 7957,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 8077,
+	"startColumn": 36,
+	"endLineNumber": 8077,
+	"endColumn": 36
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 8155,
+	"startColumn": 11,
+	"endLineNumber": 8155,
+	"endColumn": 11
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSlotElement'.",
+	"source": "ts",
+	"startLineNumber": 8259,
+	"startColumn": 12,
+	"endLineNumber": 8259,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSpanElement'.",
+	"source": "ts",
+	"startLineNumber": 8260,
+	"startColumn": 21,
+	"endLineNumber": 8260,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSlotElement'.",
+	"source": "ts",
+	"startLineNumber": 8262,
+	"startColumn": 10,
+	"endLineNumber": 8262,
+	"endColumn": 10
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLSpanElement'.",
+	"source": "ts",
+	"startLineNumber": 8263,
+	"startColumn": 19,
+	"endLineNumber": 8263,
+	"endColumn": 19
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 8344,
+	"startColumn": 26,
+	"endLineNumber": 8344,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 8349,
+	"startColumn": 26,
+	"endLineNumber": 8349,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 8353,
+	"startColumn": 23,
+	"endLineNumber": 8353,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 8456,
+	"startColumn": 11,
+	"endLineNumber": 8456,
+	"endColumn": 11
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 8464,
+	"startColumn": 16,
+	"endLineNumber": 8464,
+	"endColumn": 16
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 8479,
+	"startColumn": 25,
+	"endLineNumber": 8479,
+	"endColumn": 25
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 8488,
+	"startColumn": 16,
+	"endLineNumber": 8488,
+	"endColumn": 16
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLTextAreaElement'.",
+	"source": "ts",
+	"startLineNumber": 8599,
+	"startColumn": 14,
+	"endLineNumber": 8599,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 8680,
+	"startColumn": 26,
+	"endLineNumber": 8680,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 8854,
+	"startColumn": 26,
+	"endLineNumber": 8854,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLInputElement'.",
+	"source": "ts",
+	"startLineNumber": 8859,
+	"startColumn": 14,
+	"endLineNumber": 8859,
+	"endColumn": 14
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9000,
+	"startColumn": 19,
+	"endLineNumber": 9000,
+	"endColumn": 19
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9007,
+	"startColumn": 19,
+	"endLineNumber": 9007,
+	"endColumn": 19
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 9013,
+	"startColumn": 21,
+	"endLineNumber": 9013,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 9014,
+	"startColumn": 17,
+	"endLineNumber": 9014,
+	"endColumn": 17
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 9015,
+	"startColumn": 51,
+	"endLineNumber": 9015,
+	"endColumn": 51
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 9015,
+	"startColumn": 68,
+	"endLineNumber": 9015,
+	"endColumn": 68
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 9025,
+	"startColumn": 23,
+	"endLineNumber": 9025,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 9039,
+	"startColumn": 23,
+	"endLineNumber": 9039,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9044,
+	"startColumn": 39,
+	"endLineNumber": 9044,
+	"endColumn": 39
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 9044,
+	"startColumn": 53,
+	"endLineNumber": 9044,
+	"endColumn": 53
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9168,
+	"startColumn": 20,
+	"endLineNumber": 9168,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9175,
+	"startColumn": 22,
+	"endLineNumber": 9175,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 9251,
+	"startColumn": 32,
+	"endLineNumber": 9251,
+	"endColumn": 32
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLDivElement'.",
+	"source": "ts",
+	"startLineNumber": 9490,
+	"startColumn": 27,
+	"endLineNumber": 9490,
+	"endColumn": 27
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9502,
+	"startColumn": 17,
+	"endLineNumber": 9502,
+	"endColumn": 17
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9508,
+	"startColumn": 12,
+	"endLineNumber": 9508,
+	"endColumn": 12
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9528,
+	"startColumn": 26,
+	"endLineNumber": 9528,
+	"endColumn": 26
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'MouseEvent'.",
+	"source": "ts",
+	"startLineNumber": 9540,
+	"startColumn": 42,
+	"endLineNumber": 9540,
+	"endColumn": 42
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 9546,
+	"startColumn": 22,
+	"endLineNumber": 9546,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 9552,
+	"startColumn": 21,
+	"endLineNumber": 9552,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9605,
+	"startColumn": 22,
+	"endLineNumber": 9605,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9611,
+	"startColumn": 23,
+	"endLineNumber": 9611,
+	"endColumn": 23
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9618,
+	"startColumn": 21,
+	"endLineNumber": 9618,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 9624,
+	"startColumn": 22,
+	"endLineNumber": 9624,
+	"endColumn": 22
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'FocusEvent'.",
+	"source": "ts",
+	"startLineNumber": 9630,
+	"startColumn": 21,
+	"endLineNumber": 9630,
+	"endColumn": 21
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9636,
+	"startColumn": 15,
+	"endLineNumber": 9636,
+	"endColumn": 15
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 9644,
+	"startColumn": 24,
+	"endLineNumber": 9644,
+	"endColumn": 24
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 9650,
+	"startColumn": 20,
+	"endLineNumber": 9650,
+	"endColumn": 20
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Event'.",
+	"source": "ts",
+	"startLineNumber": 9657,
+	"startColumn": 31,
+	"endLineNumber": 9657,
+	"endColumn": 31
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 9731,
+	"startColumn": 49,
+	"endLineNumber": 9731,
+	"endColumn": 49
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Node'.",
+	"source": "ts",
+	"startLineNumber": 9731,
+	"startColumn": 77,
+	"endLineNumber": 9731,
+	"endColumn": 77
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-web-utilities/dist/dom.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 8,
+	"startColumn": 53,
+	"endLineNumber": 8,
+	"endColumn": 53
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-web-utilities/dist/dom.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 8,
+	"startColumn": 123,
+	"endLineNumber": 8,
+	"endColumn": 123
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-web-utilities/dist/dom.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'KeyboardEvent'.",
+	"source": "ts",
+	"startLineNumber": 13,
+	"startColumn": 43,
+	"endLineNumber": 13,
+	"endColumn": 43
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-web-utilities/dist/html.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'CSSStyleDeclaration'.",
+	"source": "ts",
+	"startLineNumber": 9,
+	"startColumn": 75,
+	"endLineNumber": 9,
+	"endColumn": 75
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-web-utilities/dist/html.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 13,
+	"startColumn": 58,
+	"endLineNumber": 13,
+	"endColumn": 58
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-web-utilities/dist/rtl-scroll-converter.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 11,
+	"startColumn": 43,
+	"endLineNumber": 11,
+	"endColumn": 50
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-web-utilities/dist/rtl-scroll-converter.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'Element'.",
+	"source": "ts",
+	"startLineNumber": 15,
+	"startColumn": 43,
+	"endLineNumber": 15,
+	"endColumn": 50
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@vscode/webview-ui-toolkit/dist/vscode-design-system.d.ts",
+	"owner": "typescript",
+	"code": "2304",
+	"severity": 8,
+	"message": "Cannot find name 'HTMLElement'.",
+	"source": "ts",
+	"startLineNumber": 9,
+	"startColumn": 61,
+	"endLineNumber": 9,
+	"endColumn": 61
+}]
+```
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## adding "DOM" to the tsconfig `lib` section and compiling
+Output errors
+```bash
+[{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2344",
+	"severity": 8,
+	"message": "Type 'T' does not satisfy the constraint 'string | number | boolean | symbol | any[] | Uint8Array | ({ createCSS?(): string; } & Record<PropertyKey, any>) | null'.",
+	"source": "ts",
+	"startLineNumber": 2252,
+	"startColumn": 66,
+	"endLineNumber": 2252,
+	"endColumn": 66
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2344",
+	"severity": 8,
+	"message": "Type 'T' does not satisfy the constraint 'string | number | boolean | symbol | any[] | Uint8Array | ({ createCSS?(): string; } & Record<PropertyKey, any>) | null'.",
+	"source": "ts",
+	"startLineNumber": 2254,
+	"startColumn": 186,
+	"endLineNumber": 2254,
+	"endColumn": 186
+},{
+	"resource": "/d:/source/repos/testwv2/node_modules/@microsoft/fast-foundation/dist/fast-foundation.d.ts",
+	"owner": "typescript",
+	"code": "2344",
+	"severity": 8,
+	"message": "Type 'T' does not satisfy the constraint 'string | number | boolean | symbol | {} | any[] | Uint8Array | null'.",
+	"source": "ts",
+	"startLineNumber": 2256,
+	"startColumn": 121,
+	"endLineNumber": 2256,
+	"endColumn": 121
+}]
+```
